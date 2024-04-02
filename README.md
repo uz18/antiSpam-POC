@@ -1,7 +1,7 @@
 # antiSpam (Proof of Concept)
 ## https://antibot.fly.dev 
 
-This is a proof-of-concept project that aims to detect and prevent automated bots from accessing protected pages. 
+This is a proof-of-concept project that aims to detect and prevent automated bots from accessing protected pages on a webpage. 
 * It uses a series of randomly sorted JavaScript challenges to identify the presence of headless browsers, such as Puppeteer, Puppeteer Stealth, Selenium, and others. \
 * My goal with this project is to be able to prevent automated requests on my personal projects while capturing and storing as little personally identifiable information as possible. :) 
 
