@@ -1,5 +1,4 @@
-# antiSpam (Proof of Concept)
-## https://antibot.fly.dev 
+# [antiSpam (Proof of Concept)](https://iamnotabot.net/)
 
 This is a proof-of-concept project that aims to detect and prevent automated bots from accessing protected pages on a webpage. 
 * It uses a series of randomly sorted JavaScript challenges to identify the presence of headless browsers, such as Puppeteer, Puppeteer Stealth, Selenium, etc.
