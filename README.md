@@ -21,4 +21,4 @@ The client's IP address is logged when retrieving challenges from the /challenge
 No other personally identifiable information is collected or stored by the system.
 
 ## Disclaimer
-Please note that the GIFs used in this project are sourced from Tenor and do not belong to the project owner.
+Please note that the GIFs used in this project are sourced from [Tenor](https://tenor.com/) and do not belong to the project owner.
