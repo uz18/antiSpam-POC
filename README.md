@@ -2,10 +2,10 @@
 ## https://antibot.fly.dev 
 
 This is a proof-of-concept project that aims to detect and prevent automated bots from accessing protected pages on a website. 
-
 It uses a series of randomly sorted JavaScript challenges to identify the presence of headless browsers, such as Puppeteer, Puppeteer Stealth, Selenium, and others.
-
 My goal with this project is to be able to prevent automated requests on my personal projects while capturing and storing as little personally identifiable information as possible. :)
+
+A big inspiration for this project has been https://github.com/wwhtrbbtt/Challenger
 
 ## How it Works
 - Challenge Generation: The system utilizes the cy_jsvmp library to compile and obfuscate a set of JavaScript challenges. These challenges are designed to detect the presence of automated browsers.
