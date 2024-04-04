@@ -17,7 +17,7 @@ A big inspiration for this project has been [Challenger](https://github.com/wwht
 - Attempt Limit: To prevent brute-force attacks, there is a maximum limit of three attempts to solve each challenge. If a client fails to provide the correct result within three attempts, the challenge and all of its associated data are deleted, thus making it unsolvable, and the client must restart the process.
 
 ## Privacy and Security
-The client's IP address is logged when retrieving challenges from the /challenges endpoint and compared against the IP address during result submission at the /submit endpoint.
+The client's IP address and user-agent are logged when retrieving challenges from the /challenges endpoint and compared against the IP address and user-agent during result submission and any protected endpoints.
 No other personally identifiable information is collected or stored by the system.
 
 ## Disclaimer
