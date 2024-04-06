@@ -5,7 +5,7 @@ This is a proof-of-concept project that aims to detect and prevent automated bot
 * It uses a series of randomly sorted JavaScript challenges to identify the presence of headless browsers, such as Puppeteer, Puppeteer Stealth, Selenium, etc.
 * My goal with this project is to be able to prevent automated requests on my personal projects while capturing and storing as little personally identifiable information as possible. :) 
 
-This project was largely inspired by [Challenger](https://github.com/wwhtrbbtt/Challenger), [https://abrahamjuliot.github.io/creepjs/](https://abrahamjuliot.github.io/creepjs/) and [https://www.browserscan.net/en](https://www.browserscan.net/en)
+This project was largely inspired by [Challenger](https://github.com/wwhtrbbtt/Challenger), [CreepJS](https://abrahamjuliot.github.io/creepjs/) and [Browserscan](https://www.browserscan.net/en)
 
 ## How it Works
 - Challenge Generation: This project uses the [cy_jsvmp](https://github.com/2833844911/cy_jsvmp) library to compile and obfuscate a randomly ordered set of JavaScript challenges (currently 36 total). These challenges are designed to detect the presence of automated browsers.
