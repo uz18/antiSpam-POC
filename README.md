@@ -17,9 +17,10 @@ This project was largely inspired by [Challenger](https://github.com/wwhtrbbtt/C
 - Attempt Limit: To prevent brute-force attacks, there is a maximum limit of three attempts to solve each challenge. If a client fails to provide the correct result within three attempts, the challenge and all of its associated data are deleted, thus making it unsolvable, and the client must restart the process.
 
 ## Future Plans 
-- A "weighting" system similar to [Challenger](https://github.com/wwhtrbbtt/Challenger) which attributes a certain "weight" value to each challenge, which allows for certain challenges to fail but a valid cookie to still be generated (either for compatibility or low/medium/high security designation for different endpoints)
+- A "weighting" system similar to [Challenger](https://github.com/wwhtrbbtt/Challenger) which attributes a certain "weight" value to each challenge. This would allow for a valid cookie to be generated even if certain challenges fail (either for compatibility or low/medium/high security designation for different endpoints)
 - More obfuscation and encryption for the payload
-- A better-developed payload
+- A better-developed payload (including WebRTC checks, WebGL Checks, etc)
+- IP reputation logic
 - Randomization of the VM that the payload runs on
 - Better support for use on external sites/apps
 
