@@ -18,8 +18,8 @@ This project was largely inspired by [Challenger](https://github.com/wwhtrbbtt/C
 
 ## Future Plans 
 - A "weighting" system similar to [Challenger](https://github.com/wwhtrbbtt/Challenger) which attributes a certain "weight" value to each challenge. This would allow for a valid cookie to be generated even if certain challenges fail (either for compatibility or low/medium/high security designation for different endpoints)
-- More obfuscation and encryption for the payload
-- A better-developed payload (including WebRTC checks, WebGL Checks, etc)
+- More obfuscation, randomization and encryption for the payload
+- More JS challenges (including WebRTC checks, WebGL Checks, etc)
 - IP reputation logic
 - Randomization of the VM that the payload runs on
 - Better support for use on external sites/apps
