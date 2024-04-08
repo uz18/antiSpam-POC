@@ -16,6 +16,13 @@ This project was largely inspired by [Challenger](https://github.com/wwhtrbbtt/C
 - Access Control: The generated cookie can be used to grant access to protected pages or resources on the website. This ensures that only clients who have successfully passed the challenge are allowed access.
 - Attempt Limit: To prevent brute-force attacks, there is a maximum limit of three attempts to solve each challenge. If a client fails to provide the correct result within three attempts, the challenge and all of its associated data are deleted, thus making it unsolvable, and the client must restart the process.
 
+## Future Plans 
+- A "weighting" system similar to [Challenger](https://github.com/wwhtrbbtt/Challenger) which attributes a certain "weight" value to each challenge, which allows for certain challenges to fail but a valid cookie to still be generated (either for compatibility or low/medium/high security designation for different endpoints)
+- More obfuscation and encryption for the payload
+- A better-developed payload
+- Randomization of the VM that the payload runs on
+- Better support for use on external sites/apps
+
 ## Privacy and Security
 The client's IP address, JA3 fingerprint, and user-agent are logged when retrieving challenges from the /challenges endpoint and compared against the IP address, JA3 fingerprint, and user-agent during result submission and any protected endpoints.
 No other personally identifiable information is collected or stored by the system and all information stored is displayed to the user.
