@@ -3,13 +3,13 @@
 
 This is a proof-of-concept project that aims to detect and prevent automated bots from accessing protected pages on a webpage. 
 * It uses a series of randomly sorted JavaScript challenges to identify the presence of headless browsers, such as Puppeteer, Puppeteer Stealth, Selenium, etc.
-* My goal with this project is to be able to prevent automated requests on my personal projects while capturing and storing as little personally identifiable information as possible :) 
+* My goal with this project is to be able to prevent automated requests on my personal projects while capturing and storing as little personally identifiable information as possible :)
 
 This project was largely inspired by [Challenger](https://github.com/wwhtrbbtt/Challenger), [CreepJS](https://abrahamjuliot.github.io/creepjs/) and [Browserscan](https://www.browserscan.net/en)
 
 ## How it Works
-- Challenge Generation: This project uses the [cy_jsvmp](https://github.com/2833844911/cy_jsvmp) library to compile and obfuscate a randomly ordered set of JavaScript challenges (currently 36 total). These challenges are designed to detect the presence of automated browsers.
-- Challenge Retrieval: The compiled challenges, which contain a unique challengeID, are exposed through the [/challenges](https://antibot.fly.dev/challenges) endpoint. Clients can retrieve the challenges by making a request to this endpoint.
+- Challenge Generation: This project uses the [cy_jsvmp](https://github.com/2833844911/cy_jsvmp) library to compile and further obfuscate a randomly ordered and obfuscated set of JavaScript challenges (currently 50 total). These challenges are designed specifically to detect the presence of automated browsers.
+- Challenge Retrieval: The compiled challenges, which contain a unique challengeID, are exposed through the [/challenges](https://antibot.fly.dev/challenges) endpoint which is automatically called when the gif on the homepage is loaded.
 - Challenge Execution: The client-side (webpage) executes the received compiled challenges on the user's device. The challenges produce a result based on the detected browser environment and the unique order of the challenges.
 - Result Submission: The client submits the challenge result, along with the corresponding challengeID, to the [/submit](https://antibot.fly.dev/submit) endpoint.
 - Result Validation: The server compares the submitted challenge result with the expected result associated with the challengeID. If the submitted result matches the expected result, the server generates a valid cookie.
